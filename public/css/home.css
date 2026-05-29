@@ -248,11 +248,11 @@ color: #041e42;
     justify-content: center;
 }
 
-.shop_category_frame .shop_category_frame .container {
+.shop_category_frame .container {
     flex-direction: column;
 }
 
-.shop_category_frame .container .category_top {
+.container .category_top {
     width: 100%;
     height: auto;
 
@@ -262,7 +262,7 @@ color: #041e42;
     align-items: center;
 }
 
-.shop_category_frame .category_top span {
+.category_top span {
     font-family: "Jost";
     font-style: normal;
     font-weight: 500;
@@ -272,7 +272,7 @@ color: #041e42;
     color: #041e42;
 }
 
-.shop_category_frame .category_top a {
+.category_top a {
     font-family: "Jost";
     font-style: normal;
     font-weight: 500;
@@ -282,30 +282,29 @@ color: #041e42;
     color: #041e42;
 }
 
-.shop_category_frame .category_top a:hover {
+.category_top a:hover {
     border-bottom: 2px solid #041e42;
 }
 
 
-.shop_category_frame .container_wrapper{
+.container_wrapper{
     margin-top: 30px;
 
     display: flex;       
     flex-direction: row;
     justify-content: space-between;
-    
+
 }
 
-.shop_category_frame .category_box{
+.category_box{
     width: 150px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    cursor: pointer;
 }
 
-.shop_category_frame .category_img_box{
+.category_img_box{
     width: 150px;
     height: 150px;
 
@@ -315,13 +314,14 @@ color: #041e42;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
-.shop_category_frame .category_img_box img{
+.category_img_box img{
     width: 80px;
 }
 
-.shop_category_frame .category_box span{
+.category_box span{
     margin-top: 15px;
 
     text-align: center;
