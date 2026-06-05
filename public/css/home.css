@@ -934,7 +934,7 @@
     align-items: center;
 }
 
-.home_page .event_frame {
+.home_page .event_frame{
     position: relative;
     margin-top: 90px;
     width: 100%;
@@ -943,16 +943,21 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-image: url("../images/icons/event_bg.png")
 
-    background-image: url(../images/icons/event_bg.png);
 }
 
-.event_frame .container {
+.event_frame .white_svg {
+    filter: brightness() invert(1);
+}
+
+
+.event_frame .container{
     flex-direction: row;
     justify-content: center;
 }
 
-.container .event_content_box {
+.event_frame .container .event_content_box{
     width: 340px;
     height: auto;
 
@@ -960,49 +965,110 @@
     flex-direction: column;
     justify-content: center;
 }
-.event_title {
-    font-family: "Jost";
+
+.event_frame .event_content_box .event_title{
+   font-family: "Jost";
     font-style: normal;
-    font-weight: 500;
     font-size: 28px;
+    font-weight: 500;
     line-height: 40px;
+    color: rgba(255, 255, 255, 1);
     text-transform: capitalize;
-
-    color: white;
-
 }
 
-.event_content_box .timer_wrapper {
-    margin: 30px;
+.event_frame .event_content_box .timer_wrapper{
+    margin: 30px 0;
+
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
 }
 
-.timer_wrapper .timer_box {
-    width: 60px;
-    height: auto;
+.event_frame .timer_wrapper .timer_box{
+    width: 87px;
+    height:auto;
 
     display: flex;
     flex-direction: column;
 }
 
- .event_content_box a {
+.event_frame .timer_box strong{
+    color: rgba(255, 255, 255, 1);
+    font-family: "jost";
+    font-style: normal;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.event_frame .timer_box span{
+    color: rgba(255, 255, 255, 1);
+    font-family:"Jost";
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.event_frame .event_content_box a{
     width: 140px;
     height: 50px;
 
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-transform: capitalize;
 
-    background: white;
-    border: 1px solid white;
+
+    border: 1px solid rgba(255, 255, 255, 1);
     border-radius: 6px;
+    background: rgba(255, 255, 255, 1);
+
+    color: rgba(4, 30, 66, 1);
     font-family: "Jost";
     font-style: normal;
-    font-weight: 500;
     font-size: 15px;
+    font-weight: 500;
     line-height: 22px;
-    color: #041E42;
+}
 
+.event_frame .container .event_content_wrapper{
+    width: 930px;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.event_frame .event_content_wrapper .event_product_boxes{
+    position: relative;
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+}
+
+
+.event_frame .event_product_boxes .event_product_box{
+    margin-right: 8px;
+    width: 205px;
+    height: 392px;
+
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 6px;
+}
+
+.event_frame .event_product_box .event_product_img{
+ 
+    width: 100%;
+    height: 280px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
