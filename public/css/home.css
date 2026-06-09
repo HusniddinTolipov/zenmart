@@ -947,6 +947,8 @@
 
 }
 
+
+/* EVENT FRAME  */
 .event_frame .white_svg {
     filter: brightness() invert(1);
 }
